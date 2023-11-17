@@ -1,0 +1,46 @@
+.raw-data
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 97.5%;
+    height: 95%;
+    background-color: #212124;
+    border-radius: 10px;
+}
+
+.bar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    overflow-x: auto;
+}
+
+.bar::-webkit-scrollbar
+{
+    height: 7px;
+}
+
+.bar::-webkit-scrollbar-track 
+{
+    background: #212124;
+}
+
+.bar::-webkit-scrollbar-thumb 
+{
+    background: #1A1A1C;
+}
+
+.bar::-webkit-scrollbar-thumb:hover 
+{
+    background: rgb(24, 23, 23);
+}
+
+.chart-container
+{
+    width: 50%;
+}

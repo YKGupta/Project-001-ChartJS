@@ -1,0 +1,33 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Poppins;
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track 
+{
+    background: #212124;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: #C3083F;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #b3073b;
+}
+
+body
+{
+    background-color: #1A1A1C;
+}

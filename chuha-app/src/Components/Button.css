@@ -1,0 +1,21 @@
+.btn
+{
+    height: 40px;
+    width: 100px;
+    flex-shrink: 0;
+    margin: 0px 2px;
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid #C3083F;
+    transform: all 1s;
+}
+
+.btn:hover
+{
+    background-color: #1A1A1C;
+}
+
+.btn:focus
+{
+    background-color: #1A1A1C;
+}
