@@ -18,7 +18,46 @@
     border-radius: 10px;
 }
 
-.statement h2, .illustration h2
+.statement-inner
+{
+    height: 100%;
+    margin: 0px;
+    overflow-y: auto;
+}
+
+.statement-inner::-webkit-scrollbar
+{
+    width: 2px;
+}
+
+.statement-inner::-webkit-scrollbar-track 
+{
+    background: #212124;
+}
+
+.statement-inner::-webkit-scrollbar-thumb 
+{
+    background: #C3083F;
+}
+
+.statement-inner::-webkit-scrollbar-thumb:hover 
+{
+    background: #b3073b;
+}
+
+.illustration-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.illustration-header Button
+{
+    margin-left: 15px;
+}
+
+.statement h2, .illustration-header h2
 {
     font-weight: 600;
 }

@@ -3265,9 +3265,14 @@ function RawData(props)
                     )
                 }
             </div>
-            
-            <div className="chart-container">
-                <Line data = {data}/>
+            <div className="chart-box">
+              <div className="chart-container">
+                  <Line data = {data}/>
+              </div>
+              <div className="chart-information">
+                <h3>Chart Information</h3>
+                <p><strong>Change-</strong> The change in the number of ways as we change the fixed position of one knight</p>
+              </div>
             </div>
         </div>
     )

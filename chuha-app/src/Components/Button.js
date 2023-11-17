@@ -8,7 +8,8 @@ function Button(props) {
         if(props.click !== undefined)
           props.click(props.number);
       }
-    }>{ props.content }</button>
+    }
+    >{ props.content }</button>
   )
 }
 

@@ -62,7 +62,6 @@ function App() {
       return;
     calculateIndicies(knightFixPos);
     let i = otherKnightPosition === -1 ? 1 : otherKnightPosition + 1;
-    console.log(blockedIndicies);
     while(blockedIndicies.includes(i))
       i++;
     if(i <= size*size)
@@ -72,10 +71,17 @@ function App() {
     }
   }
 
+  function resetIllustration()
+  {
+    setOtherKnightPosition(-1);
+    setKnightFixPos(-1);
+    setAvailablePositionCounter(0);
+  }
+
   return (
   <>
     <Header />
-    <Container size={ size } otherKnightPosition = { otherKnightPosition } setOtherKnightPosition = { calculateKnightNewPosition } fixedKnightPosition = { knightFixPos } setFixedKnightPosition = { calculateBlockedIndicies } availablePositionsCounter = { availablePositionsCounter }/>
+    <Container size={ size } otherKnightPosition = { otherKnightPosition } setOtherKnightPosition = { calculateKnightNewPosition } fixedKnightPosition = { knightFixPos } setFixedKnightPosition = { calculateBlockedIndicies } availablePositionsCounter = { availablePositionsCounter } resetIllustration = { resetIllustration }/>
   </>);
 }
 
