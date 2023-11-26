@@ -1,12 +1,20 @@
 import './App.css';
 import Header from './Components/Header';
 import Container from './Components/Container';
+import Selection from './Components/Selection';
+import Answer from './Components/Answer';
+import RawData from './Components/RawData';
 import { useState } from 'react';
 
 function App() {
   const [otherKnightPosition, setOtherKnightPosition] = useState(-1);
   const [knightFixPos, setKnightFixPos] = useState(-1);
   const [availablePositionsCounter, setAvailablePositionCounter] = useState(0);
+  const [currentConcept, setCurrentConcept] = useState(2);
+
+  const conceptOptions = ['Selection', 'Answer', 'Raw Data'];
+  const concepts = [<Selection />, <Answer />, <RawData n={20}/>];
+
   // Size of grid
   const size = 4;
   const blockedIndicies = [];
@@ -81,7 +89,8 @@ function App() {
   return (
   <>
     <Header />
-    <Container size={ size } otherKnightPosition = { otherKnightPosition } setOtherKnightPosition = { calculateKnightNewPosition } fixedKnightPosition = { knightFixPos } setFixedKnightPosition = { calculateBlockedIndicies } availablePositionsCounter = { availablePositionsCounter } resetIllustration = { resetIllustration }/>
+    <Container size={ size } otherKnightPosition = { otherKnightPosition } setOtherKnightPosition = { calculateKnightNewPosition } fixedKnightPosition = { knightFixPos } setFixedKnightPosition = { calculateBlockedIndicies } availablePositionsCounter = { availablePositionsCounter } resetIllustration = { resetIllustration } conceptOptions = { conceptOptions } currentConcept = { currentConcept } setCurrentConcept = { setCurrentConcept } concepts = { concepts }/>
+    <small>&nbsp;&copy; Yash Kumar Gupta</small>
   </>);
 }
 

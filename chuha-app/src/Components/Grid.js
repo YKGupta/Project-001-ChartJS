@@ -12,9 +12,7 @@ function Grid(props)
 
     return (
         <div className="grid-container">
-            <div className="grid-details">N = 4</div>
             {rows}
-            <div className="grid-size-details">4 × 4</div>
         </div>
     )
 }

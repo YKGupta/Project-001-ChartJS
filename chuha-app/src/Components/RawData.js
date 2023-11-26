@@ -3260,7 +3260,7 @@ function RawData(props)
                     btnData.map(
                         (element) => 
                         (
-                            <Button cName="btn" idName={"btn-" + element} content={"N = " + element} key={element} click={() => setData(dataParameter[element])} number={element}/>
+                            <Button cName="btn" idName={"btn-" + element} content={"N = " + (element + 1)} key={element} click={() => setData(dataParameter[element])} number={element}/>
                         )
                     )
                 }

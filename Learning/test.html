@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Chuha</title>
-    <style>
-        .container
-        {
-            width: 100px;
-            height: 40px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.2);
-            border: 0px;
-            font-size: 16px;
-            opacity: 1;
-            transition: all 1s;
-        }
-    </style>
-</head>
-<body>
-    <div class="container" id="t1">
-        1
-    </div>
-
-    <script>
-        const t1 = document.getElementById('t1');
-        t1.addEventListener('click', () => {
-            console.log('clicked');
-            t1.style.opacity = 0;
-        });
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chuha Tes</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+\begin{equation}
+   E = mc^2
+\end{equation}
+    </body>
 </html>
